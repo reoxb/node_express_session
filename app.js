@@ -1,10 +1,12 @@
 const express = require('express');
+// necesario para almacenar la sesion 
 const session = require('express-session')
 const app = express();
 
 const port = 9000;
 const hostname = 'localhost';
 
+// definimos como manejara express la session
 app.use(session({
     secret: 'javascript rules',
     resave: true,
